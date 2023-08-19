@@ -2,19 +2,12 @@
     <div class="max-w-7xl mx-auto  text-sm sm:text-base text-gray-800 dark:text-gray-200">
 
        {{-- the hero section --}}
-        <div class="">
-            <div class="sm:py-12 text-center ">
-                <div class="sm:flex items-center w-full py-8">
-                    <div class="flex-1 text-5xl font-bold border-b-2 sm:border-b-0 sm:border-r-4 sm:text-6xl md:text-7xl xl:text-9xl md:text-right px-2 py-8">Program</div>
-                    <div class="flex-1 ">
-                        <div class="max-w-sm px-2 sm:text-left mt-4 sm:mt-0 mx-auto sm:mx-0">
-                            <div class="text-base font-semibold sm:text-lg md:text-2xl">Turtor Exam Qestions Cameroon</div>
-                            <div class="dark:text-gray-400 text-sm sm:text-base text-gray-600 md:text-lg font-thin pt-2" >we invest in you, your success is our prority that is why we value you</div>
-                        </div>
-                    </div>
-                </div>
-                {{-- <x-secondary-button class="text-center px-12 rounded-3xl mb-16">Home</x-secondary-button> --}}
-            </div>
+       <x-header 
+            class="py-12"
+            title="program" 
+            subTitle="all resources at just a click" 
+            caption="All solutions and questions to all your national examinations" >
+        </x-header>
         </div>
     
         {{-- the section breaker --}}

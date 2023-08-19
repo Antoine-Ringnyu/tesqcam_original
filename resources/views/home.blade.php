@@ -15,72 +15,19 @@
 <div class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 text-sm sm:text-base" >
 
     {{-- the hero section --}}
-    <div class="">
-        <div class="sm:py-12 lg:py-24 text-center text-gray-800 dark:text-gray-200">
-            <div class="sm:flex items-center w-full py-10">
-                <div class="flex-1 text-5xl font-bold border-b-2 sm:border-b-0 sm:border-r-4 sm:text-6xl md:text-7xl xl:text-8xl md:text-right px-2 py-8 ">TesqCam</div>
-                <div class="flex-1 ">
-                    <div class="max-w-sm px-2 sm:text-left mt-4 sm:mt-0 mx-auto sm:mx-0">
-                        <div class="text-base font-semibold sm:text-lg md:text-2xl">Turtor Exam Qestions Cameroon</div>
-                        <div class="text-sm sm:text-base text-gray-800 dark:text-gray-400 md:text-lg font-thin pt-2" >we invest in you, your success is our prority that is why we value you</div>
-                    </div>
-                </div>
-            </div>
-            <x-secondary-button class="text-center px-12 rounded-3xl mb-16">Home</x-secondary-button>
-        </div>
-    </div>
+    <x-header 
+        class="sm:py-12 lg:py-24 "
+        title="tesqcam" 
+        subTitle="this is the sub" 
+        caption="this is all i have to say about this project and it is the best thing that" >
+        <x-secondary-button class="text-center px-12 rounded-3xl mb-16">Home</x-secondary-button>
+    </x-header>
 
     {{-- the section breaker --}}
     <x-line/>
  
     {{-- the product and service section --}}
-    <div class=" bg-slate-900 dark:bg-slate-200 text-white dark:text-slate-800 font-thin text-center md:px-10 px-4 py-2">
-        <div class=" max-w-2xl mx-auto">
-            <h1 class="text-3xl  sm:text-4xl md:text-5xl my-3">Our Services</h1>
-            <p class="hidden sm:block text-gray-400 text-sm font-medium">
-                it is increasing ly becoming important for Cameroonians to take the have the quality services and thier reach and the ultimate gaol of tesqcam is to deliver this services 
-            </p>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-4 sm:justify-between py-4">
-            {{-- turtor --}}
-            <div class="max-w-xs mx-auto p-2 border sm:border-none">
-                <div class="sm:w-24 sm:h-24 w-32 h-32  p-2 border bg-white shadow-md mx-auto  rounded-full overflow-hidden ">
-                    <img class="w-full block object-cover" src="{{ asset('images/icons/advice.png') }}" alt="image here">
-                </div>
-                <h2 class="mt-3 font-semibold  md:text-base">Reliable solutions
-                </h2>
-                <p class="text-gray-400 sm:text-sm">
-                    we invest in you, your success is our prority that is why we value you and go for passionate tutors in your field of studies
-                </p>
-            </div>
-
-            {{-- Questions --}}
-            <div class="max-w-xs  mx-auto p-2 border sm:border-none">
-                <div class="sm:w-24 sm:h-24 w-32 h-32 p-2 border bg-white shadow-md mx-auto  rounded-full overflow-hidden ">
-                    <img class="w-full block object-cover" src="{{ asset('images/icons/advice.png') }}" alt="image here">
-                </div>
-                <h2 class="mt-3 font-semibold  md:text-base">Reliable solutions
-                </h2>
-                <p class="text-gray-400 sm:text-sm">
-                    we invest in you, your success is our prority that is why we value you and go for passionate tutors in your field of studies
-                </p>
-            </div>
-
-            {{-- solutions --}}
-            <div class="max-w-xs mx-auto p-2 border sm:border-none">
-                <div class="sm:w-24 sm:h-24 w-32 h-32 p-2 border bg-white shadow-md mx-auto  rounded-full overflow-hidden ">
-                    <img class="w-full block object-cover" src="{{ asset('images/icons/advice.png') }}" alt="image here">
-                </div>
-                <h2 class="mt-3 font-semibold  md:text-base">Reliable solutions
-                </h2>
-                <p class="text-gray-400 sm:text-sm">
-                    we invest in you, your success is our prority that is why we value you and go for passionate tutors in your field of studies
-                </p>
-            </div>
-
-        </div>
-    </div>
-
+    <x-baner/>
     {{-- the section breaker --}}
     <x-line/>
 
@@ -125,9 +72,9 @@
 
     {{-- the carrosell section --}}
     <div class="flex flex-col gap-8 py-4 text-center sm:px-10  lg:px-28  xl:px-36">
-        <div class="block  flex-1 max-w-3xl max-h-80 mx-auto overflow-hidden">
-            <img class="block shadow-xl w-full object-cover object-center" src="{{ asset('images/caroselle/smilling teacher.jpg') }}" alt="the smilling turtor">
-        </div>
+        {{-- carosell image --}}
+        <x-carousel/>
+
         <div class=" text-gray-800 dark:text-gray-400 text-xs lg:flex flex-1">
             <div class="py-2 max-w-xs mx-auto border-b-4 lg:border-none">
                 <h1 class="text-gray-800 dark:text-gray-200 font-extrabold text-lg">
