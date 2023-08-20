@@ -84,7 +84,7 @@
             <div class="flex flex-col gap-2 py-2 max-w-xs mx-auto border-b-4 lg:border-none ">
                 <x-input-label value="Notify me about anything new">Notify me about anything new</x-input-label>
                 <div>
-                    <input class="block w-full rounded-md mx-auto" type="email" name="email" id="mail">
+                    <input type="email" placeholder="name@example.com" class="flex w-full h-10 px-3 py-2 text-sm bg-white border rounded-md border-neutral-300 ring-offset-background placeholder:text-neutral-500 focus:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-400 disabled:cursor-not-allowed disabled:opacity-50">
                     <x-primary-button class="mt-3">Subscribe</x-primary-button>
                 </div>
             </div>
