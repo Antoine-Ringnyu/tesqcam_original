@@ -2,25 +2,25 @@
 <!-- This is an example component -->
 <div class="max-w-2xl mx-auto">
 
-    <div id="default-carousel" class="relative" data-carousel="static">
+    <div id="default-carousel" class="relative bg-slate-400" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span
-                    class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
+                    class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-200">First
                     Slide</span>
-                <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                <img src="{{ asset('images/Caroselle/boys smilling.jpg') }}"
                     class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+                <img src="{{ asset('images/Caroselle/boys smilling.jpg') }}"
                     class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+                <img src="{{ asset('images/Caroselle/boys smilling.jpg') }}"
                     class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
         </div>
@@ -58,6 +58,6 @@
                 <span class="hidden">Next</span>
             </span>
         </button>
+        aklasdfl;alskdlfkl;akls;dlkfla;ls;dklfk;l
     </div>
-
 </div>

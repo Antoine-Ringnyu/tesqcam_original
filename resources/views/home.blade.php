@@ -82,7 +82,7 @@
                 <p>I already have an account</p>
             </div>
             <div class="flex flex-col gap-2 py-2 max-w-xs mx-auto border-b-4 lg:border-none ">
-                <p>Notify me about anything new</p>
+                <x-input-label value="Notify me about anything new">Notify me about anything new</x-input-label>
                 <div>
                     <input class="block w-full rounded-md mx-auto" type="email" name="email" id="mail">
                     <x-primary-button class="mt-3">Subscribe</x-primary-button>
@@ -90,48 +90,7 @@
             </div>
             <div class="py-2 max-w-xs mx-auto border-b-4 lg:border-none">
                 <h1 class="text-gray-800 dark:text-gray-200 font-extrabold text-lg">
-                    <div>
-                        <div x-data="{ modalOpen: false }"
-                            @keydown.escape.window="modalOpen = false"
-                            :class="{ 'z-40': modalOpen }" class="relative w-auto h-auto">
-                            <button @click="modalOpen=true" class="hover:underline hover:text-xl">Register</button>
-                            <template x-teleport="body">
-                                <div x-show="modalOpen" class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen" x-cloak>
-                                    <div x-show="modalOpen"
-                                        x-transition:enter="ease-out duration-300"
-                                        x-transition:enter-start="opacity-0"
-                                        x-transition:enter-end="opacity-100"
-                                        x-transition:leave="ease-in duration-300"
-                                        x-transition:leave-start="opacity-100"
-                                        x-transition:leave-end="opacity-0"
-                                        @click="modalOpen=false" class="absolute inset-0 w-full h-full bg-white backdrop-blur-sm bg-opacity-70"></div>
-                                    <div x-show="modalOpen"
-                                        x-trap.inert.noscroll="modalOpen"
-                                        x-transition:enter="ease-out duration-300"
-                                        x-transition:enter-start="opacity-0 -translate-y-2 sm:scale-95"
-                                        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-                                        x-transition:leave="ease-in duration-200"
-                                        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-                                        x-transition:leave-end="opacity-0 -translate-y-2 sm:scale-95"
-                                        class="relative w-full py-6 bg-white border shadow-lg px-7 border-neutral-200 sm:max-w-lg sm:rounded-lg">
-                                        <div class="flex items-center justify-between pb-3">
-                                            <h3 class="text-lg font-semibold">Modal Title</h3>
-                                            <button @click="modalOpen=false" class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 mt-5 mr-5 text-gray-600 rounded-full hover:text-gray-800 hover:bg-gray-50">
-                                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>  
-                                            </button>
-                                        </div>
-                                        <div class="relative w-auto pb-8">
-                                            <p>This is placeholder text. Replace it with your own content.</p>
-                                        </div>
-                                        <div class="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2">
-                                            <button @click="modalOpen=false" type="button" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors border rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-100 focus:ring-offset-2">Cancel</button>
-                                            <button @click="modalOpen=false" type="button" class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium text-white transition-colors border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2 bg-neutral-950 hover:bg-neutral-900">Register</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </template>
-                        </div>
-                    </div>
+                    <x-register-form/>
                 </h1>
                 <p>I do not have and account yet</p>
             </div>
@@ -146,47 +105,27 @@
     <h1 class="mb-16 text-center text-4xl font-thin sm:text-5xl lg:text-6xl">Testimonials</h1>
     <div class="flex flex-wrap justify-center gap-8">
         <!-- Adjusted column width for md and above screens -->
-        <div class="flex flex-col gap-4 max-w-xs w-full sm:w-1/2 md:w-1/4  border border-gray-200 transition border-opacity-60 hover:border-opacity-100 hover:border-slate-800 rounded-md overflow-hidden">
-            <div class="overflow-hidden rounded-md shadow-md">
-                <img class="block object-cover" src="{{ asset('images/caroselle/smilling teacher.jpg') }}" alt="Smiling Teacher">
-            </div>
-            <div>
-                <div class="flex justify-between items-center">
-                    <h1 class="font-bold mb-1">Angel Michel</h1>
-                    <span class="text-xs font-thin pr-6">read more</span>
-                </div>
-                <p class="text-gray-600 text-sm">
-                    I already have an account the day I set sight in TESQCAM. My results have drastically increased or .
-                </p>
-            </div>
-        </div>
+        <x-testimonial-card 
+        src="{{ asset('images/Caroselle/smilling teacher.jpg') }}"
+        name="Ntaryike Antoine"
+        comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
+        >    
+        </x-testimonial-card>
 
-        <!-- Repeat the above div for other testimonials -->
-        <div class="flex flex-col gap-4 max-w-xs w-full sm:w-1/2 md:w-1/4 border border-gray-200 transition border-opacity-60 hover:border-opacity-100 hover:border-slate-800 rounded-md overflow-hidden">
-            <div class="overflow-hidden rounded-md shadow-md">
-                <img class="block object-cover" src="{{ asset('images/Caroselle/smilling teacher.jpg') }}" alt="Smiling Teacher">
-            </div>
-            <div>
-                <h1 class="font-bold mb-1">Another Person</h1>
-                <p class="text-gray-600 text-sm">
-                    Testimonial content goes here.
-                </p>
-            </div>
-        </div>
+        <x-testimonial-card 
+        src="{{ asset('images/Caroselle/student in class.jpg') }}"
+        name="Ntaryike Antoine"
+        comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
+        >    
+        </x-testimonial-card>
 
-        <!-- Repeat the above div for other testimonials -->
-        <div class="flex flex-col gap-4 max-w-xs w-full sm:w-1/2 md:w-1/4  border border-gray-200 transition border-opacity-60 hover:border-opacity-100 hover:border-slate-800 rounded-md overflow-hidden">
-            <div class="overflow-hidden rounded-md shadow-md">
-                <img class="block object-cover" src="{{ asset('images/Caroselle/smilling teacher.jpg') }}" alt="Smiling Teacher">
-            </div>
-            <div>
-                <h1 class="font-bold mb-1">Another Person</h1>
-                <p class="text-gray-600 text-sm">
-                    Testimonial content goes here.
-                </p>
-            </div>
-        </div>
-        
+        <x-testimonial-card 
+        src="{{ asset('images/testimonials/IMG-20220425-WA0064.jpg') }}"
+        name="Ntaryike Antoine"
+        comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
+        >    
+        </x-testimonial-card>
+
         <!-- End of repetition -->
     </div>
 </div>
