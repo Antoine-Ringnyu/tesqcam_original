@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!-- This is an example component -->
 <div class="max-w-2xl mx-auto">
 
@@ -60,45 +60,4 @@
         </button>
     </div>
 
-    <p class="mt-5">
-        This carousel slider component is part of a larger, open-source library of Tailwind CSS components. Learn more
-        by going to the official
-        <a class="text-blue-600 hover:underline" href="https://flowbite.com/docs/getting-started/introduction/"
-            target="_blank">
-            Flowbite Documentation
-        </a>.
-    </p>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </div>
-=======
-<div x-data="{
-        images: [
-            '{{ asset('images/Caroselle/boys smilling.jpg') }}',
-            '{{ asset('images/Caroselle/primary pupils.jpg') }}'
-        ],
-        activeImage: 0,
-        nextImage() {
-            this.activeImage = (this.activeImage + 1) % this.images.length;
-        },
-        prevImage() {
-            this.activeImage = (this.activeImage - 1 + this.images.length) % this.images.length;
-        }
-    }">
-    <div class="block relative flex-1 max-w-3xl max-h-80 mx-auto overflow-hidden">
-        <template x-for="(image, index) in images" :key="index">
-            <img
-                x-show="index === activeImage"
-                class="absolute w-full h-full top-0 left-0 object-cover object-center transition-opacity duration-500"
-                :src="image"
-                alt="Image"
-            >
-        </template>
-        <button @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 px-2 py-1 bg-gray-800 text-white rounded-r-lg shadow-md">
-            Previous
-        </button>
-        <button @click="nextImage" class="absolute right-0 top-1/2 transform -translate-y-1/2 px-2 py-1 bg-gray-800 text-white rounded-l-lg shadow-md">
-            Next
-        </button>
-    </div>
-</div>
->>>>>>> test
