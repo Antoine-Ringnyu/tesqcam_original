@@ -101,34 +101,33 @@
     <x-line/>
 
     {{-- testimonials section --}}
-<div class="py-12 text-gray-800 dark:text-gray-200">
-    <h1 class="mb-16 text-center text-4xl font-thin sm:text-5xl lg:text-6xl">Testimonials</h1>
-    <div class="flex flex-wrap justify-center gap-8">
-        <!-- Adjusted column width for md and above screens -->
-        <x-testimonial-card 
-        src="{{ asset('images/Caroselle/smilling teacher.jpg') }}"
-        name="Ntaryike Antoine"
-        comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
-        >    
-        </x-testimonial-card>
+    <div class="py-12 text-gray-800 dark:text-gray-200">
+        <h1 class="mb-16 text-center text-4xl font-thin sm:text-5xl lg:text-6xl">Testimonials</h1>
+        <div class="flex flex-wrap justify-center gap-8">
+            <!-- Adjusted column width for md and above screens -->
+            <x-testimonial-card 
+            src="{{ asset('images/Caroselle/smilling teacher.jpg') }}"
+            name="Ntaryike Antoine"
+            comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
+            >    
+            </x-testimonial-card>
 
-        <x-testimonial-card 
-        src="{{ asset('images/Caroselle/student in class.jpg') }}"
-        name="Ntaryike Antoine"
-        comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
-        >    
-        </x-testimonial-card>
+            <x-testimonial-card 
+            src="{{ asset('images/Caroselle/student in class.jpg') }}"
+            name="Ntaryike Antoine"
+            comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
+            >    
+            </x-testimonial-card>
 
-        <x-testimonial-card 
-        src="{{ asset('images/testimonials/IMG-20220425-WA0064.jpg') }}"
-        name="Ntaryike Antoine"
-        comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
-        >    
-        </x-testimonial-card>
-
-        <!-- End of repetition -->
+            <x-testimonial-card 
+            src="{{ asset('images/testimonials/IMG-20220425-WA0064.jpg') }}"
+            name="Ntaryike Antoine"
+            comment="the day i got this is the day i saw that i can write any thing at the speed of light but i was s"
+            >    
+            </x-testimonial-card>
+            <!-- End of repetition -->
+        </div>
     </div>
-</div>
 
     
     {{-- the section breaker --}}
@@ -137,67 +136,9 @@
     {{-- the footer --}}
     <!-- Add more card items as needed -->
     <div class=" bg-slate-800 dark:bg-slate-200 text-gray-400 dark:text-gray-700">
-        <div class="max-w-2xl flex flex-col mx-auto text-xs font-thin py-12">
-            <div class="sm:flex justify-center items-center">
-                <div class="max-w-xs flex items-center mx-auto rev">
-                    <div class="  order-1">
-                        <p class="text-right p-2">
-                            Proin ex ipsum, facilisis id tincidunt sed, vulputate in lacus. Donec pharetra faucibus leo, vitae leo scelerisque eu. Nam enim dolor, porta at ex ut, eleifend tristique metus. Integer sit amet 
-                        </p>
-                    </div>
-                    <div class="w-1/3 order-2">
-                        <div class="flex justify-center items-center overflow-hidden rounded-lg border h-24 w-24 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 ">
-                            <h1 class="text-base font-semibold">TesqCam</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="max-w-xs flex items-center mx-auto">
-                    <div class="  order-2">
-                        <p class="text-left p-2">
-                            Proin ex ipsum, facilisis id tincidunt sed, vulputate in lacus. Donec pharetra faucibus leo, vitae leo scelerisque eu. Nam enim dolor, porta at ex ut, eleifend tristique metus. Integer sit amet 
-                        </p>
-                    </div>
-                    <div class="w-1/3 order-1">
-                        <div class="flex justify-center items-center overflow-hidden rounded-lg border h-24 w-24 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 ">
-                            <h1 class="text-base font-semibold">TesqCam</h1>
-                        </div>
-                    </div>
-                </div>
-           </div>
+        <x-footer>
 
-           <div class="sm:flex ">
-                <div class="max-w-xs flex items-center mx-auto">
-                    <div class="">
-                        <p class="text-right p-2">
-                            Proin ex ipsum, facilisis id tincidunt sed, vulputate in lacus. Donec pharetra faucibus leo, vitae leo scelerisque eu. Nam enim dolor, porta at ex ut, eleifend tristique metus. Integer sit amet 
-                        </p>
-                    </div>
-                    <div class="w-1/3 ">
-                        <div class="flex justify-center items-center overflow-hidden rounded-lg border h-24 w-24 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 ">
-                            <h1 class="text-base font-semibold">TesqCam</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="max-w-xs flex items-center mx-auto">
-                    <div class=" order-2">
-                        <p class="text-left p-2">
-                            Proin ex ipsum, facilisis id tincidunt sed, vulputate in lacus. Donec pharetra faucibus leo, vitae leo scelerisque eu. Nam enim dolor, porta at ex ut, eleifend tristique metus. Integer sit amet 
-                        </p>
-                    </div>
-                    <div class="w-1/3 order-1">
-                        <div class="flex justify-center items-center overflow-hidden rounded-lg border h-24 w-24 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 ">
-                            <h1 class="text-base font-semibold">TesqCam</h1>
-                        </div>
-                    </div>
-                </div>
-           </div>
-       </div>
-
-
-        <div class="text-center  pb-20">
-            <p>© 2023 Howard-Center. All rights reserved</p>
-        </div>
+        </x-footer>
     </div>
 
 </div>

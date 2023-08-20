@@ -1,7 +1,7 @@
 @props([
-    'src',
-    'name',
-    'comment',
+    'src' => 'default-image.jpg', // Default image source
+    'name' => 'John Doe',         // Default name
+    'comment' => 'No comment',    // Default comment
 ])
 
 <div class="flex flex-col gap-4 max-w-xs w-full sm:w-1/2 md:w-1/4  border border-gray-200 transition border-opacity-60 hover:border-opacity-100 hover:border-slate-800 rounded-md overflow-hidden shadow-md">
