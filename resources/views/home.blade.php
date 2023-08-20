@@ -20,6 +20,7 @@
         title="tesqcam" 
         subTitle="this is the sub" 
         caption="this is all i have to say about this project and it is the best thing that" >
+        caption="this is all i have to say aboubt this project and it is the best thing that" >
         <x-secondary-button class="text-center px-12 rounded-3xl mb-16">Home</x-secondary-button>
     </x-header>
     {{-- the section breaker --}}
