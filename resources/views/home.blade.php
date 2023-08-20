@@ -15,6 +15,7 @@
 <div class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 text-sm sm:text-base" >
 
     {{-- the hero section --}}
+<<<<<<< Updated upstream
     <div class="">
         <div class="sm:py-12 lg:py-24 text-center text-gray-800 dark:text-gray-200">
             <div class="sm:flex items-center w-full py-10">
@@ -29,6 +30,17 @@
             <x-secondary-button class="text-center px-12 rounded-3xl mb-16">Home</x-secondary-button>
         </div>
     </div>
+=======
+
+    
+    <x-header 
+        class="sm:py-12 lg:py-24 "
+        title="tesqcam" 
+        subTitle="this is the sub" 
+        caption="this is all i have to say about this project and it is the best thing that" >
+        <x-secondary-button class="text-center px-12 rounded-3xl mb-16">Home</x-secondary-button>
+    </x-header>
+>>>>>>> Stashed changes
 
     {{-- the section breaker --}}
     <x-line/>
@@ -125,9 +137,16 @@
 
     {{-- the carrosell section --}}
     <div class="flex flex-col gap-8 py-4 text-center sm:px-10  lg:px-28  xl:px-36">
+<<<<<<< Updated upstream
         <div class="block  flex-1 max-w-3xl max-h-80 mx-auto overflow-hidden">
             <img class="block shadow-xl w-full object-cover object-center" src="{{ asset('images/caroselle/smilling teacher.jpg') }}" alt="the smilling turtor">
         </div>
+=======
+        {{-- carosell image --}}
+        <x-carousel/>
+
+
+>>>>>>> Stashed changes
         <div class=" text-gray-800 dark:text-gray-400 text-xs lg:flex flex-1">
             <div class="py-2 max-w-xs mx-auto border-b-4 lg:border-none">
                 <h1 class="text-gray-800 dark:text-gray-200 font-extrabold text-lg">
