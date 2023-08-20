@@ -73,6 +73,7 @@
         </div>
     </div>
 
+    <x-baner/>
     {{-- the section breaker --}}
     <x-line/>
 
